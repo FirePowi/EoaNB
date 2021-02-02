@@ -179,32 +179,32 @@ country_event = { # The Carbonari Revolt
     	NOT = { country_exists = CBI }
     }
     CBI = {
-      transfer_state = 115
-      transfer_state = 156
+      transfer_state = 115 # Sicily
+      transfer_state = 156 # Calabria
 
       hidden_effect = {
-        add_state_core = 158
-        add_state_core = 981
-        add_state_core = 161
-        add_state_core = 2
-        add_state_core = 982
-        add_state_core = 159
-        add_state_core = 162
-        add_state_core = 751
-        add_state_core = 808
-        add_state_core = 813
-        add_state_core = 157
-        add_state_core = 785
-        add_state_core = 812
-        add_state_core = 117
-        add_state_core = 997
-        add_state_core = 156
-        add_state_core = 115
-        add_state_core = 114
-        add_state_claim = 979
-        add_state_claim = 160
-        add_state_claim = 1234
-        add_state_claim = 787
+        add_state_core = 158 #Piedmont
+        add_state_core = 981 #Aosta Valley
+        add_state_core = 161 #Romagna
+        add_state_core = 2   #Lazio
+        add_state_core = 982 #Como
+        add_state_core = 159 #Lombardy
+        add_state_core = 162 #Tuscany
+        add_state_core = 751 #Roma
+        add_state_core = 808 #Parma
+        add_state_core = 813 #Modena
+        add_state_core = 157 #Spoleto
+        add_state_core = 785 #Vatican city
+        add_state_core = 812 #Abruzzo-Molise
+        add_state_core = 117 #Campania
+        add_state_core = 997 #Terra d'Otranto
+        add_state_core = 156 #Calabria
+        add_state_core = 115 #Sicily
+        add_state_core = 114 #Sardinia
+        add_state_claim = 979  #Ticino
+        add_state_claim = 160  #Veneto
+        add_state_claim = 1234 #Trentino
+        add_state_claim = 787  #San Marino
       }
     }
     FRA = {
@@ -370,7 +370,7 @@ country_event = { # Savoy Rebellion
   trigger = {
     tag = FRA
     has_completed_focus = FRA_keep_authoritarian_empire
-    owns_state = 735
+    owns_state = 735 #Savoy
     NOT = { has_country_flag = FRA_savoy_revolt }
     date < 1868.1.1
   }
@@ -379,8 +379,8 @@ country_event = { # Savoy Rebellion
 
 	immediate = {
 		SAV = {
-			transfer_state = 735
-			add_state_core = 735
+			transfer_state = 735 #Savoy
+			add_state_core = 735 #Savoy
 			load_oob = SAV_REVOLT
 		}
 		declare_war_on= {
@@ -439,7 +439,7 @@ country_event = { # Franco-Monegasque Treaty
     name = nap_france.15.a
     add_political_power = 25
     MNC = {
-      transfer_state = 1153
+      transfer_state = 1153 #Monaco
       add_ideas = FRA_idea_sovereignty_monaco_recognized
       set_politics = {
         ruling_party = autocracy
@@ -587,7 +587,7 @@ country_event = { # Monaco votes to join France
 
   option = { # As small as it is, Monaco will be a great partner!
     name = nap_france.15.a
-    transfer_state = 1153
+    transfer_state = 1153 #Monaco
   }
 }
 
@@ -1573,8 +1573,8 @@ country_event = { # The Kabyle manage to hold their lands
 
   trigger = {
     KBY = {
-    controls_state = 1384 
-    controls_state = 460
+    controls_state = 1384 #Algiers
+    controls_state = 460  #Constantine
 
     }
   }
@@ -1599,10 +1599,10 @@ country_event = { # The Kabyle manage to hold their lands
           tag = FRA
         }
       }
-      transfer_state = 1384
-      transfer_state = 459
-      transfer_state = 460
-      transfer_state = 513
+      transfer_state = 1384 #Algiers
+      transfer_state = 459  #Oran
+      transfer_state = 460  #Constantine
+      transfer_state = 513  #Ilemcen
     }
   }
 }
@@ -1647,7 +1647,7 @@ country_event = { # Constantine come back to Algerian colony after victory in Ka
   	tag = EPD
 		exists = yes
     tag = FRA
-    owns_state = 1382
+    owns_state = 1382 #Kabylia
   }
 
   fire_only_once = yes
@@ -1655,7 +1655,7 @@ country_event = { # Constantine come back to Algerian colony after victory in Ka
   option = { # As it should be
     name = nap_france.154.a
     EPD = {
-      transfer_state = 460
+      transfer_state = 460 #Constantine
     }
   }
 }
@@ -1730,7 +1730,7 @@ country_event = { # Cochinchina war FRA victory
     name = nap_france.161.a
     ai_chance = { factor = 100 }
     CCH = {
-      transfer_state = 998
+      transfer_state = 998 #Can Tho
     }
     VIN = {
       set_variable = { rival_country = CCH.id }
@@ -2503,7 +2503,7 @@ country_event = { # Treaty of Luxemburg - Victory
   trigger = {
     tag = FRA
     FRA = {
-      controls_state = 1009
+      controls_state = 1009 #Ost-Rhine
     }
   }
 
@@ -2788,8 +2788,8 @@ country_event = { # France - Answer Yes - Treaty of Turin
   option = {
     name = nap_france.342.a
     FRA = {
-      transfer_state = 735
-      transfer_state = 822
+      transfer_state = 735 #Savoy
+      transfer_state = 822 #Nice
     }
   }
 }
@@ -2804,8 +2804,8 @@ country_event = { # France - Answer No - Treaty of Turin
   option = { # It's treason then
     name = nap_france.345.a
     ai_chance = { factor = 95 }
-      add_state_claim = 735
-      add_state_claim = 812
+      add_state_claim = 735 #Savoy
+      add_state_claim = 822 #Nice
       declare_war_on= {
         target = PIE
         type = take_claimed_state
@@ -3163,7 +3163,7 @@ country_event = {
     trigger = {
       AND = {
         tag = ENG
-        NOT = { ENG = { owns_state = 311 } }
+        NOT = { ENG = { owns_state = 311 } } #Belize
       }
     }
     name = nap_france.36201.a
@@ -3178,7 +3178,7 @@ country_event = {
         tag = SPR
         AND = {
           tag = ENG
-          ENG = { owns_state = 311 }
+          ENG = { owns_state = 311 } #Belize
         }
       }
     }
@@ -3411,15 +3411,15 @@ country_event = { # Mexico City in our hands!
 	OR = {
 		FRA = {
 			has_country_flag = FRA_soledad_conv_france_con
-			controls_state = 277
+			controls_state = 277 #Mexico
 		}
 		SPR = {
 			has_country_flag = FRA_soledad_conv_spain_con
-			controls_state = 277
+			controls_state = 277 #Mexico
 		}
 		ENG = {
 			has_country_flag = FRA_soledad_conv_england_con
-			controls_state = 277
+			controls_state = 277 #Mexico
 		}
     }
   }
@@ -3440,9 +3440,9 @@ country_event = { # Mexico City in our hands!
   # option = {
     # name = nap_france.3612.b
     # trigger = {
-    	# SPR = { tag = SPR has_country_flag = FRA_soledad_conv_spain_con controls_state = 277 }
-		# ENG = { tag = ENG has_country_flag = FRA_soledad_conv_england_con controls_state = 277 }
-		# FRA = { tag = FRA has_country_flag = FRA_mexican_intervention_flag controls_state = 277 }
+    	# SPR = { tag = SPR has_country_flag = FRA_soledad_conv_spain_con controls_state = 277 } #Mexico
+		# ENG = { tag = ENG has_country_flag = FRA_soledad_conv_england_con controls_state = 277 } #Mexico
+		# FRA = { tag = FRA has_country_flag = FRA_mexican_intervention_flag controls_state = 277 } #Mexico
       # }
 	# hidden_effect = {
     	# MXE = {
@@ -3466,7 +3466,7 @@ country_event = { # Juan Nepomuceno Almonte named president of Mexico
   option = {
     name = nap_france.3613.a
     MXE = {
-    	transfer_state = 277
+    	transfer_state = 277 #Mexico 
 		# Set MHC
 		add_to_array = { # position 0 is null value
 			array = local_mhc_army_available_traits_array
@@ -3545,7 +3545,7 @@ country_event = { # Proclamation of the Second Mexican Empire
 		    	id = nap_france.3616
 		    	days = 7
 		        }
-			add_state_core = 277
+			add_state_core = 277 #Mexico
 	        }
 	     }
     }
@@ -4022,8 +4022,8 @@ country_event = { #The Republicans take Chiuhaha and Guadalajara
   	tag = MEX
 	has_war_with = MXE
 	has_war_with = FRA
-	controls_state = 478
-	controls_state = 482
+	controls_state = 478 #Jalisco
+	controls_state = 482 #Chihuahua
 	date > 1865.1.1
   }
 
@@ -4153,16 +4153,16 @@ country_event = { #Republican Triumph
  trigger = {
   	tag = MEX
   	MEX = {
-	    controls_state = 277
-		controls_state = 477
-	    controls_state = 478
-   		controls_state = 479
-		controls_state = 480
-		controls_state = 481
-		controls_state = 482
-		controls_state = 1112
-		controls_state = 1113
-		controls_state = 1124
+	    controls_state = 277  #Mexico
+		controls_state = 477  #Veracruz
+	    controls_state = 478  #Jalisco
+   		controls_state = 479  #Tamaulipas
+		controls_state = 480  #Coahulia
+		controls_state = 481  #Durango
+		controls_state = 482  #Chihuahua
+		controls_state = 1112 #Zacatecas
+		controls_state = 1113 #San Luis Potosi
+		controls_state = 1124 #Guanajuato
 		has_war_with = MXE
 		NOT = { has_war_with = FRA }
 		has_idea = MEX_american_support
@@ -5555,7 +5555,7 @@ country_event = { # The Siege of Paris
   fire_only_once = yes
 
   trigger = {
-    PRS = { controls_state = 16 }
+    PRS = { controls_state = 16 } #Paris
     has_cosmetic_tag = FRA_TRANSITION_EMPIRE
   }
 
@@ -5676,13 +5676,13 @@ country_event = { # War delegation retreat to Bordeaux
   is_triggered_only = yes
 
   trigger = {
-    PRS = { controls_state = 24 }  
+    PRS = { controls_state = 24 } #Centre
   } 
 
   option = {
     name = third_rep_france.0082.a
     hidden_effect = {
-      set_capital = 19
+      set_capital = 19 #Aquitaine
     }
   }
 }
@@ -5697,7 +5697,7 @@ country_event = { # War delegation captured in Bordeaux
   is_triggered_only = yes
 
   trigger = {
-    PRS = { controls_state = 19 }  
+    PRS = { controls_state = 19 } #Aquitaine 
   } 
 
   option = {
@@ -5822,7 +5822,7 @@ country_event = { # Paris Captured by Prussians
 
   trigger = {
     PRS = { 
-      controls_state = 814
+      controls_state = 814 #Paris
     }
   }
 
@@ -5855,12 +5855,12 @@ country_event = { # Armistice
         white_peace = PRS
       }
 			PRS = { 
-				transfer_state = 28 
-				transfer_state = 972
-				transfer_state = 18 
-				transfer_state = 976 
-				transfer_state = 29 
-				transfer_state = 1151 
+				transfer_state = 28 #Alsace-Lorraine
+				transfer_state = 972 #Moselle
+				transfer_state = 18 #Champagne
+				transfer_state = 976 #Nord
+				transfer_state = 29 #Picardie
+				transfer_state = 1151 #Calais
 				country_event = { id = fraprswar.13 days = 10 }
 				country_event = { days = 1 id = third_rep_france.0112 }
 			} 
@@ -6033,15 +6033,15 @@ country_event = { # The Frankfurt Pact Signed Beetween France And The Prussian A
 
   option = {
     name = third_rep_france.016.a
-    FRA = { transfer_state = 972 } 
-    FRA = { transfer_state = 18 } 
-    FRA = { transfer_state = 976 } 
-    FRA = { transfer_state = 29 } 
-    FRA = { transfer_state = 1151 } 
-    17 = { set_demilitarized_zone = yes }
-    972 = { set_demilitarized_zone = yes }
-    18 = { set_demilitarized_zone = yes }
-    29 = { set_demilitarized_zone = yes }
+    FRA = { transfer_state = 972 } # Moselle
+    FRA = { transfer_state = 18 } # Champagne
+    FRA = { transfer_state = 976 } # Nord
+    FRA = { transfer_state = 29 } # Picardie
+    FRA = { transfer_state = 1151 } # Calais
+    17 = { set_demilitarized_zone = yes } # Franche-Comte
+    972 = { set_demilitarized_zone = yes } # Moselle
+    18 = { set_demilitarized_zone = yes } # Champagne
+    29 = { set_demilitarized_zone = yes } # Picardie
     FRA = { add_ideas = FRA_idea_loss_of_alsace	}
   }
 }
@@ -6059,11 +6059,11 @@ country_event = { #German Troops withdraw from France
 		name = third_rep_france.017.a
 		ai_chance = { factor = 100 }
 		hidden_effect = {
-      17 = { set_demilitarized_zone = no }
-      972 = { set_demilitarized_zone = no }
-      18 = { set_demilitarized_zone = no }
-      29 = { set_demilitarized_zone = no }
-      1151 = { set_demilitarized_zone = no }
+      17 = { set_demilitarized_zone = no } # Franche-Comte
+      972 = { set_demilitarized_zone = no } # Moselle
+      18 = { set_demilitarized_zone = no } # Champagne
+      29 = { set_demilitarized_zone = no } # Picardie
+      1151 = { set_demilitarized_zone = no } # Calais
 		}
 	}
 }
